@@ -1,4 +1,4 @@
- # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from pylab import *
 from PIL import Image
 from PCV.PCV.geometry import warp
@@ -8,11 +8,11 @@ This is the piecewise affine warp example from Section 3.2, Figure 3-5.
 """
 
 # open image to warp
-fromim = array(Image.open('../data/sunset_tree.jpg')) 
+fromim = array(Image.open('../data/sunset_tree.jpg'))
 x, y = meshgrid(range(5), range(6))
 
-x = (fromim.shape[1]/4) * x.flatten()
-y = (fromim.shape[0]/5) * y.flatten()
+x = (fromim.shape[1] / 4) * x.flatten()
+y = (fromim.shape[0] / 5) * y.flatten()
 
 # triangulate
 tri = warp.triangulate_points(x, y)
