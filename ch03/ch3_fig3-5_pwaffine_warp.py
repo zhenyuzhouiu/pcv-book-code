@@ -1,7 +1,7 @@
  # -*- coding: utf-8 -*-
 from pylab import *
 from PIL import Image
-from PCV.geometry import warp
+from PCV.PCV.geometry import warp
 
 """
 This is the piecewise affine warp example from Section 3.2, Figure 3-5.

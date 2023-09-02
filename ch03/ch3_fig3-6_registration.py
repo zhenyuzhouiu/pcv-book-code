@@ -1,5 +1,5 @@
- # -*- coding: utf-8 -*-
-from PCV.tools import imregistration
+# -*- coding: utf-8 -*-
+from PCV.PCV.tools import imregistration
 
 """
 This is the face image registration example from Figure 3-6.
@@ -11,4 +11,4 @@ xml_filename = '../data/jkfaces.xml'
 points = imregistration.read_points_from_xml(xml_filename)
 
 # register
-imregistration.rigid_alignment(points,'../data/jkfaces/')
+imregistration.rigid_alignment(points, '../data/jkfaces/')
